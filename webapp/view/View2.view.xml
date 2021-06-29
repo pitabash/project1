@@ -1,0 +1,28 @@
+<mvc:View xmlns:core="sap.ui.core"
+    controllerName="project1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+
+				<Page id="page2" title="Bio_Data">  <!--{i18n>title}-->
+					<content >
+                        <!--<Button text="Login"></Button>-->
+
+		                <f:SimpleForm  >
+			                <f:content>
+				                <Label text="Name" />
+				                <Text  text="Pitabash Swain" />
+				                <Label text="Street/No." />
+				                <Text text="Birakishorpur" />
+				                <Label text="ZIP Code/City" />
+				                <Text text="754110/Jagatsinghpur" />
+				                <Label text="Country" />
+				                <Text id="countryText" text="India" />
+			                </f:content>
+		                </f:SimpleForm>
+
+                    </content>
+				</Page>
+</mvc:View>

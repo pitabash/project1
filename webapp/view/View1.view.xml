@@ -1,0 +1,124 @@
+<mvc:View xmlns:core="sap.ui.core"
+    controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Bio_Data">  <!--{i18n>title}-->
+					<content >
+                        <!--<Button text="Login"></Button>-->
+
+		                <!--<f:SimpleForm  >
+			                <f:content>
+				                <Label text="Name" />
+				                <Text  text="Pitabash Swain" />
+				                <Label text="Street/No." />
+				                <Text text="Birakishorpur" />
+				                <Label text="ZIP Code/City" />
+				                <Text text="754110/Jagatsinghpur" />
+				                <Label text="Country" />
+				                <Text id="countryText" text="India" />
+			                </f:content>
+		                </f:SimpleForm>-->
+
+                        <VBox >
+                            <items>
+                                <HBox width="100%">
+
+                                    <Label text="First Name : "  textAlign="Right" required="true" design="Bold" width="400px"></Label>
+                                    <Input width="400px" id="fName"></Input>
+
+                                </HBox>
+
+                                <HBox width="100%">
+                                    <Label text="Middle Name : "  textAlign="Right" design="Bold" width="400px"></Label>
+                                    <Input width="400px" id="mName"></Input>
+                                </HBox>
+
+                                <HBox width="100%">
+                                    <Label text="Last Name : "  textAlign="Right" design="Bold" width="400px"></Label>
+                                    <Input width="400px" id="lName"></Input>
+                                </HBox>
+
+                                <HBox width="100%">
+                                    <Label text="Company : " textAlign="Right"  required="true" design="Bold" width="400px"></Label>
+                                    <Input width="400px" id="company"></Input>
+                                </HBox>
+
+                                <HBox width="100%">
+                                    <Label text="Email : " textAlign="Right" required="true" design="Bold" width="400px"></Label>
+                                    <Input width="400px" type="Email" id="email"></Input>
+                                </HBox>
+
+                                <HBox width="100%">
+                                    <Label text="Phone : " textAlign="Right" required="true" design="Bold" width="400px"></Label>
+                                    <Input width="200px" id="phone"></Input>
+                                </HBox>
+
+                                <HBox width="100%">
+                                    <Label text="Gender : " textAlign="Right" required="true" design="Bold" width="400px"></Label>
+                                    <RadioButton text="Male"   groupName="sex" width="133px" id="male"  ></RadioButton>
+                                    <RadioButton text="Female" groupName="sex" width="133px" id="female"></RadioButton>
+                                    <RadioButton text="Others" groupName="sex" width="133px" id="others"></RadioButton>
+                                </HBox>
+
+                                <HBox width="100%">
+                                    <items>
+                                        <Label text="Date : " textAlign="Right" required="true" design="Bold" width="400px"></Label>
+                                        <DatePicker displayFormat="YYYY-MM-dd" id="date"></DatePicker>
+                                    </items>
+                                </HBox>
+
+                                <HBox width="100%">
+                                    <items>
+                                        <Label text="Skills : " textAlign="Right" required="true" design="Bold" width="400px"></Label>
+                                        <CheckBox text="ABAP" id="abap" width="133px"  ></CheckBox>
+                                        <CheckBox text="JAVA" id="java" width="133px" ></CheckBox>
+                                        <CheckBox text="C" width="133px" ></CheckBox>
+                                    </items>
+                                </HBox>
+
+                                <HBox width="100%">
+                                    <items>
+                                        <Label text="Address :" textAlign="Right" required="true" design="Bold" width="400px"></Label>
+                                        <TextArea width="400px" id="textArea"></TextArea>
+                                    </items>     
+                                </HBox>
+
+                                <HBox >
+                                    <items>
+                                        <Label text="City :" textAlign="Right" required="true" design="Bold" width="400px"></Label>
+                                        <ComboBox id="combo" >
+                                            <items>
+                                                <core:Item  text="Cuttack" key="ctc" ></core:Item  >
+                                                <core:Item text="Jagatsighur"></core:Item>
+                                                <core:Item text="Bhubaneswar"></core:Item>
+                                                <core:Item text="Puri"></core:Item>
+                                            </items>
+                                        </ComboBox>
+                                    </items>
+                                </HBox>
+
+                                <HBox >
+                                    <items>
+                                        <Label width="400px"></Label>
+                                        <Button text="Signup" press="goToView2"></Button>
+                                        <Button text="Load Data" press="onPress" ></Button>
+                                    </items>
+                                </HBox>
+
+                            </items>
+                        </VBox>
+
+	
+
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
